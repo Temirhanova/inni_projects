@@ -10,7 +10,7 @@ public class Main {
         List<String> resultList = new ArrayList<>();
         long start = System.nanoTime();
 
-        String path = "E:\\JAVA Innopolis\\5. потоки\\threads\\src\\ru\\innipolis\\stc13\\threads\\threadPoll\\result\\file1.txt";
+        String path = "E:\\JAVA Innopolis\\5. потоки\\threads\\src\\ru\\innopolis\\stc13\\threads\\threadPoll\\result\\file1.txt";
 //        int countFiles = 8;
 //        String[] files = new String[countFiles];
 //        for (int i = 1; i <= countFiles; i++) {
@@ -26,6 +26,6 @@ public class Main {
         }
         threadPool.shutdown();
         long end = System.nanoTime();
-        System.out.println("dsf " + (end - start));
+        System.out.println("time " + (end - start));
     }
 }
