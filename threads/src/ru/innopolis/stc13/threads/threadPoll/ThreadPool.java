@@ -25,7 +25,6 @@ public class ThreadPool {
     }
 
     public void createThreads() {
-        ArrayList<Thread> threads = new ArrayList<>(this.limit);
         for (int i = 0; i < this.limit; i++) {
             new Thread() {
                 @Override
