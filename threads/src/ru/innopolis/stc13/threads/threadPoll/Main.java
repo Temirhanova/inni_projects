@@ -2,6 +2,7 @@ package ru.innopolis.stc13.threads.threadPoll;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Main {
@@ -9,7 +10,8 @@ public class Main {
 
         List<String> resultList = new ArrayList<>();
         long start = System.nanoTime();
-
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
         String path = "E:\\JAVA Innopolis\\5. потоки\\threads\\src\\ru\\innopolis\\stc13\\threads\\threadPoll\\result\\file1.txt";
 //        int countFiles = 8;
 //        String[] files = new String[countFiles];
@@ -27,5 +29,7 @@ public class Main {
         threadPool.shutdown();
         long end = System.nanoTime();
         System.out.println("time " + (end - start));
+
+        scanner.nextLine();
     }
 }
