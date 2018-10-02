@@ -29,7 +29,7 @@ public class FindWordTask implements Runnable{
             e.printStackTrace();
         }
     }
-    private boolean checkWordInSentence(String sentence, String word) {
+    public boolean checkWordInSentence(String sentence, String word) {
         sentence = sentence.toLowerCase();
         if (sentence.contains(word) == true)
             System.out.println("My sentence = " + sentence);
